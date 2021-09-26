@@ -11,7 +11,8 @@ public:
         for(int i=1; i<=amount; i++){
             
             for(int coin : coins){
-                if(i>=coin && dp[i-coin] != INT_MAX){
+                if(i<coin) break;
+                if(dp[i-coin] != INT_MAX){
                     dp[i] = min(dp[i], 1+dp[i-coin]);
                 }
             }

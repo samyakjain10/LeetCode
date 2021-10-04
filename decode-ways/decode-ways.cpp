@@ -1,22 +1,23 @@
-class Solution
-{
+class Solution {
 public:
-    int numDecodings(string s)
+    int solve(int i,string &s,int *dp)
     {
-        int n = s.size();
-        vector<int> mem(n + 1, -1);
-        mem[n] = 1;
-        return s.empty() ? 0 : num(0, s, mem);
+        if(i>=s.size())return 1;
+        if(dp[i]!=-1)return dp[i];
+        int ans=0;
+        int x1=s[i]-48,x2=0;
+        if(i<s.size()-1)
+        {
+            x2=x1*10 + s[i+1]-48;
+        }
+        if(x1>0)ans+=solve(i+1,s,dp);
+        if(x1>0 and x2>0 and x2<=26)ans+=solve(i+2,s,dp);
+            return dp[i]=ans;
     }
-    int num(int i, string &s, vector<int> &mem)
-    {
-        if (mem[i] > -1)
-            return mem[i];
-        if (s[i] == '0')
-            return mem[i] = 0;
-        int res = num(i + 1, s, mem);
-        if (i < s.size() - 1 && (s[i] == '1' || s[i] == '2' && s[i + 1] < '7'))
-            res += num(i + 2, s, mem);
-        return mem[i] = res;
+    int numDecodings(string s) {
+        int dp[101];
+        memset(dp,-1,sizeof(dp));
+        return solve(0,s,dp);
+        
     }
 };

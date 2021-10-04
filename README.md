@@ -6,7 +6,6 @@
 
 <h1 align="center"> Hacktoberfest 2021 🎉</h1>
 
-
 ![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square) &nbsp;![Open Source Love](https://badges.frapsoft.com/os/v1/open-source.svg?v=102) &nbsp;<img src="https://img.shields.io/badge/hacktoberfest-2021-blueviolet" alt="Hacktober Badge"/>  
 
 ### LeetCode Questions 💻

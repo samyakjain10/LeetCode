@@ -24,16 +24,10 @@ This repo contains a collection of LeetCode interview questions to help you ace 
 
 ## Guidelines to follow for contribution:
 1. First of all give this repo a ⭐ so that more open source enthusiasts get to know about this repo and can get started with their open source journey. 
- 2.  Only use C++ to write your code. Only contributions written in C++ are welcomed.
- 2. Only submit PRs for problems that aren't already in the repo, and make sure that no one else has submitted a PR for the same issue.
- 3. Use proper file naming conventions (camel casing), for example, if you're giving a PR for a two-sum problem, the file name should be twoSum.cpp, and the file name should be self-explanatory as to what problem you're solving.
- 4. Please include a detailed explanation of the situation for which you are offering a solution.
-
-
-> Contributing to Hacktoberfest 2021  
-> **Problem**    :     Min Cost Problem
->   Link to the problem : [https://leetcode.com/problems/min-cost-climbing-stairs/#](https://leetcode.com/problems/min-cost-climbing-stairs/#)
->   File added - `cpp/dp/MinCost.cpp`
+2.  Only use C++ to write your code. Only contributions written in C++ are welcomed.
+3. Only submit PRs for problems that aren't already in the repo, and make sure that no one else has submitted a PR for the same issue.
+4. Use proper file naming conventions (camel casing), for example, if you're giving a PR for a two-sum problem, the file name should be twoSum.cpp, and the file name should be self-explanatory as to what problem you're solving.
+5. Please include a detailed explanation of the situation for which you are offering a solution.
 6. Link your pull request to the issue assigned.
 7. Please assign me ([@samyakjain10](https://github.com/samyakjain10)) as the reviewer for the PR.
 
